@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block pageTitle %}
+  <CENTER><h3> Management Menu</h3></CENTER>
+{% endblock %}
+
+{% block pageBody %}
+
+	 <CENTER>
+	 	<table>
+	 	
+  		    <tr><td><a href="{% url 'mysite.enCourses.views.courseList' %}" style="text-decoration: none"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;View Enrollment</a></td></tr>
+	  <tr><td><a href="{% url 'mysite.users.views.mooclist' %}" style="text-decoration: none"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;View Mooclist</a></td></tr>
+	 
+	 <tr><td><a href="{% url 'mysite.myproj.views.categoryManager' %}" style="text-decoration: none"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Category Management</a></td></tr>
+		    <tr><td><a href="{% url 'mysite.myproj.views.courseManager' %}" style="text-decoration: none"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Owned Courses </a></td></tr>
+	   </table> 
+ 	 </CENTER>
+
+{% endblock %}
+
